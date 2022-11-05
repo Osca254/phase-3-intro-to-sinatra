@@ -35,19 +35,19 @@ end
 end
  
 
-#   get '/multiply/:numa1/:numa2' do
-#     numa1 = params[:numa1].to_i
-#     numa2 = params[:numa2].to_i
-#     numa1 = 28
-#     numa2 = 23
-#     product = numa1 * numa2
-#     {results: product}.to_json
+  get '/multiply/:numa1/:numa2' do
+    numa1 = params[:numa1].to_i
+    numa2 = params[:numa2].to_i
+    numa1 = 28
+    numa2 = 23
+    product = numa1 * numa2
+    {results: product}.to_json
   
-# end
-# get '/games/:id' do
-#   game = Game.find(params[:id])
-#   game.to_json
-# end
+end
+get '/games/:id' do
+  game = Game.find(params[:id])
+  game.to_json
+end
 end
 
 run App
